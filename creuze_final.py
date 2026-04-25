@@ -13,7 +13,7 @@ from deep_translator import GoogleTranslator
 # CONFIGURATION DE LA PAGE
 # =========================
 st.set_page_config(
-    page_title="Cinéma Creuse - Plateforme Complète",
+    page_title="Cinéma Silenzio - Plateforme Complète",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -167,7 +167,7 @@ class CNCDataExtractor:
 @st.cache_data
 def load_movie_data():
     """Charge les données pour le système de recommandation"""
-    df = pd.read_csv('https://raw.githubusercontent.com/Yachre/Creuze/refs/heads/main/Database_finale.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/Yachre/Silenzio/refs/heads/main/Database_finale.csv')
     columns_to_combine = ['Genre', 'Réalisateur', 'Acteur', 'Actrice', 'Synopsis']
     for col in columns_to_combine:
         df[col] = df[col].fillna('')
@@ -283,7 +283,7 @@ menu = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.info("""
 **À propos**  
-Plateforme d'analyse et de recommandation pour le cinéma en Creuse.
+SILENZIO : La plateforme d'analyse et de recommandation pour le cinéma en Creuse.
 
 **Sources :** INSEE, CNC  
 **Année :** 2024
@@ -294,7 +294,7 @@ Plateforme d'analyse et de recommandation pour le cinéma en Creuse.
 # =========================
 
 if menu == "Accueil":
-    st.title("Plateforme Cinéma Creuse")
+    st.title("SILENZIO")
     st.markdown("### Votre outil complet d'analyse et de recommandation")
     
     st.markdown("---")
