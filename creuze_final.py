@@ -295,7 +295,7 @@ SILENZIO : La plateforme d'analyse et de recommandation pour le cinéma en Creus
 
 if menu == "Accueil":
     st.title("SILENZIO")
-    st.markdown("### Votre outil complet d'analyse et de recommandation")
+    st.markdown("### Parce que les bons films se dégustent en paix.")
     
     st.markdown("---")
     
@@ -855,7 +855,7 @@ elif menu == "KPI Stratégiques":
 # =========================
 
 elif menu == "Recommandation de Films":
-    st.title("Movie Finder & Recommender")
+    st.title("Silenzio : Chut... ça tourne en Creuse")
     
     # Chargement des données
     df = load_movie_data()
