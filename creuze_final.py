@@ -13,7 +13,7 @@ from deep_translator import GoogleTranslator
 # CONFIGURATION DE LA PAGE
 # =========================
 st.set_page_config(
-    page_title="Cinéma Silenzio - Plateforme Complète",
+    page_title="Regardez. Écoutez. Silenzio.",
     layout="wide",
     initial_sidebar_state="expanded"
 )
